@@ -1,0 +1,78 @@
+
+
+.videocontenedor{
+    
+    width: 95%;
+    position: absolute;
+    display: flex;
+    margin: 80px 0px 0px 0px;
+    height: 90%;
+    
+}
+
+.caja{
+    width: 25%;
+    padding-left: 30px;
+    padding-top: 20px;
+    
+   
+}
+
+
+
+
+.video{
+    width: 100%;
+    background-color: rgb(43, 43, 54);
+    height: 200px;
+   margin-bottom: 140px;
+}
+
+.video h5{
+   color: rgb(255, 255, 255);
+   position: absolute;
+   background-color: black;
+   border-radius: 8%;
+  
+}
+
+.iconvideo{
+    color: rgb(255, 255, 255);
+   position: absolute;
+   fill: aliceblue;
+   border-radius: 8%;
+   margin-top: 10px;
+   margin-left: 10px;
+}
+
+
+.video video{
+    height: 200px;
+    width: 100%;
+}
+
+.datosVideo{
+    margin-left: 50px;
+    
+}
+
+.imagenCanal img{
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.invisible{
+    
+    position: absolute;
+    text-align: left;
+    margin-left: 22px;
+    margin-top: 20px;
+}
+
+.caja:hover{
+    cursor: pointer;
+}
