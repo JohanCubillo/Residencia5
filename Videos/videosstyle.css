@@ -65,14 +65,29 @@
 }
 
 
-.invisible{
+#invisible{
     
-    position: absolute;
+    position: relative;
     text-align: left;
-    margin-left: 22px;
-    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(177, 152, 233, 0.6);
 }
 
 .caja:hover{
     cursor: pointer;
+}
+
+#demo1{
+    display: none;
+    position: absolute;
+    
+}
+
+.icons{
+    color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+   position: absolute;
+   z-index: 100000;
 }
