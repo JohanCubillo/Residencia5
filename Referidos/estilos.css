@@ -1,0 +1,338 @@
+
+@import url('https:fonds.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+    --primary-color: white;
+    --secondary-color: rgb(61, 68, 73);
+    --highlight-color: #b1c6d4;
+
+    --dt-status-aviable-color: greenyellow;
+    --dt-status-away-color: lightsalmon;
+    --dt-status-offline-color: lightgray;
+
+    --dt-padding: 12px;
+    --dt-padding-s: 6px;
+    --dt-padding-xs: 4px;
+
+    --dt-border-radius: 3px;
+
+    --dt-background-color-container: #1f1f20f8;
+    --dt-border-color:var(--secondary-color);
+    --dt-bg-color:var(--highlight-color);
+    --dt-text-color:var(--primary-color);
+    --dt-bg-active-button:var(--highlight-color);
+    --dt-text-color-button:var(--primary-color);
+    --dt-text-color-active-button:var(--primary-color);
+    --dt-hover-cell:var(--highlight-color);
+    --dt-even-row-color:var(--secondary-color);
+    --dt-focus-color:var(--highlight-color);
+    --dt-input-background-color:var(--secondary-color);
+    --dt-input-color:var(--primary-color);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 90px;
+    z-index: 10;
+    background: #5b639c;
+  }
+  header .titulo
+  {
+    position: relative;
+    align-items: center;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: letras;
+    
+  }
+
+  header .navigation
+  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+
+  header .navigation li
+  {
+    list-style: none;
+    margin: 0 10px;
+    font-family: letras;
+  }
+  header .navigation li a
+  {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  header .navigation li a:hover
+  {
+    color: #ffeb3b;
+  }
+ 
+  .head{
+    height: 40vh;
+    background-image: linear-gradient(to top, rgba(37, 16, 31, 0.486) 0%, hsla(223, 36%, 26%, 0.514) 100%), url(img/bitcoin1.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+/*
+#main{
+    min-height: 100vh;
+    position: relative;
+}*/
+
+video{
+   position:relative;
+   top: 0;
+   left: 0;
+   width: 40%;
+   height: 100%;
+   object-fit: cover;
+   
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #242429;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+.datos{
+    padding-top: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    color: rgb(161, 243, 245);
+}
+
+.material-icons{
+    font-size: 16px;
+}
+
+
+.datatable-container{
+    font-family: 'Noto Sans',sans-serif;
+    background-color: var(--dt-background-color-container);
+    border-radius: var(--dt-border-radius);
+    color: var(--dt-text-color);
+    width:auto;
+    margin: 0 auto;
+    font-size: 20px;
+    
+}
+
+.datatable-container .header-tools{
+    border-bottom: solid 1px var(--dt-border-color);
+    padding:var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+}
+
+.datatable-container .header-tools .search{
+    width: 30%;
+}
+.datatable-container .header-tools .search .search-input{
+    width: 100%;
+    background-color: var(--dt-input-background-color);
+    display: block;
+    box-sizing: border-box;
+    border-radius: var(--dt-border-radius);
+    border: solid 1px var(--dt-border-color);
+    color: var(--dt-input-color);
+}
+
+.datatable-container .header-tools .tools{
+    width:90%;
+}
+
+.datatable-container .header-tools .tools ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+
+}
+
+.datatable-container .header-tools .tools ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+    align-items: baseline;
+}
+
+.datatable-container .footer-tools{
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+}
+.datatable-container .footer-tools .list-items{
+    width: 50%;
+}
+.datatable-container .footer-tools .pages{
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages ul{
+    margin: 0;
+    padding:0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.datatable-container .footer-tools .pages ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+}
+
+.datatable-container .footer-tools .pages ul li button,.datatable-container .header-tools .tools ul li button{
+    font-family: 'Noto Sans',sans-serif;
+    color: var(--dt-text-color-button);
+    width: 120%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: var(--dt-border-radius);
+    background: transparent;
+    cursor: pointer;
+}
+
+.datatable-container .footer-tools .pages ul li button:hover,.datatable-container .header-tools .tools ul li button:hover{
+    background: var(--dt-bg-active-button);
+    color: var(--dt-text-color-active-button);
+}
+
+.datatable-container .footer-tools .pages ul li span.active{
+    background-color: var(--dt-bg-color);
+    border-radius: var(--dt-border-radius);
+}
+
+.datatable-container .footer-tools .pages ul li button,
+.datatable-container .footer-tools .pages ul li span,
+.datatable-container .header-tools .tools ul li button{
+    padding: var(--dt-padding-s) var(--dt-padding);
+}
+.datatable-container .datatable{
+    border-collapse: collapse;
+    width: 100%;
+}
+.datatable-container .datatable,.datatable-container .datatable th,.datatable-container .datatable td{
+    padding: var(--dt-padding)var(--dt-padding);
+}
+.datatable-container .datatable th{
+    font-weight:  bolder;
+    text-align: left;
+    border-bottom: solid 1px var(--dt-border-color);
+}
+.datatable-container .datatable td{
+    border-bottom: solid 1px var(--dt-border-color);
+}
+.datatable-container .datatable tbody tr:nth-child(even){
+    background-color: var(--dt-even-row-color);
+}
+
+.datatable-container .datatable tbody tr:hover{
+    background-color: var(--dt-hover-cell);
+}
+.datatable-container .datatable tbody tr .available::after,
+.datatable-container .datatable tbody tr .away::after,
+.datatable-container .datatable tbody tr .offline::after{
+    display: inline-block;
+    vertical-align: middle;
+}
+.datatable-container .datatable tbody tr .available::after{
+    content: 'Available';
+    color: var(--dt-status-aviable-color);
+}   
+
+.datatable-container .datatable tbody tr .away::after{
+    content: 'Away';
+    color: var(--dt-status-away-color);
+}
+.datatable-container .datatable tbody tr .offline::after{
+    content: 'Offline';
+    color: var(--dt-status-offline-color);
+}
+.datatable-container .datatable tbody tr .available::before,
+.datatable-container .datatable tbody tr .away::before,
+.datatable-container .datatable tbody tr .offline::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.datatable-container .datatable tbody tr .available::before{
+    background-color: var(--dt-status-aviable-color);
+}
+.datatable-container .datatable tbody tr .away::before{
+    background-color: var(--dt-status-away-color);
+}
+.datatable-container .datatable tbody tr .offline::before{
+    background-color: var(--dt-status-offline-color);
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;     
+    margin: auto;
+    padding: 60px 0;
+}
+.subtitulo{
+    color: #d9cff3;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+footer{
+    background: #48474b;
+    padding-bottom: 0.1px;
+}
+
+.contactos-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
