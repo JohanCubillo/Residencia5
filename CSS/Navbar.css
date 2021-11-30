@@ -1,14 +1,14 @@
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 100px;
-    z-index: 10;
-    background: #5b639c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 90px;
+  z-index: 10;
+  background: #5b639c;
   }
   header .logo
   {
