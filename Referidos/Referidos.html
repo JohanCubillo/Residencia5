@@ -11,23 +11,20 @@
 </head>
 
 <body>
-    <header>
-        <a href="" class="titulo">
-            <h1>REFERIDOS</h1>
-        </a>
-        <ul class="navigation">
-            <li><a href="../Principal.html">Volver</a></li>
-        </ul>
-    </header>
+
+    <video muted autoplay loop>
+        <source src="video/pexels.mp4" type="video/mp4">
+    </video>
+
     <main>
-        <section class="head"></section>
-
-        <section class="video">
-            <video muted autoplay loop>
-                <source src="video/Video.mp4" type="video/mp4">
-            </video>
-        </section>
-
+        <header>
+            <a href="" class="titulo">
+                <h1>REFERIDOS</h1>
+            </a>
+            <ul class="navigation">
+                <li><a href="../Principal.html">Volver</a></li>
+            </ul>
+        </header>
         <div class="datatable-container">
             <div class="header-tools">
                 <div class="tools">
@@ -48,87 +45,91 @@
                     </ul>
                 </div>
                 <div class="search">
-                    <input type="text" name="id" class="search-input">
+                    <input type="text" name="id" class="search-input" placeholder="Buscar">
                 </div>
             </div>
             <table class="datatable">
-                <thead>
+                <thead class="titulo">
                     <tr>
                         <th></th>
-                        <th>Status</th>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>office</th>
-                        <th>Age</th>
-                        <th>Date</th>
+                        <th>Usuario Referido</th>
+                        <th>Fecha</th>
+                        <th>Monto</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td class="table-checkbox"><input type="checkbox"></td>
-                        <td><span class="available"></span></td>
-                        <td>Jose Rodriguez</td>
-                        <td>CEO</td>
-                        <td>Guapiles</td>
-                        <td>28</td>
-                        <td>2021/05/02</td>
+                        <td>Pedro Gonzales Mora</td>
+                        <td>2021/02/15</td>
+                        <td>$5000</td>
                     </tr>
                     <tr>
                         <td class="table-checkbox"><input type="checkbox"></td>
-                        <td><span class="away"></span></td>
-                        <td>Pedro mora</td>
-                        <td>CEO</td>
-                        <td>Limon</td>
-                        <td>20</td>
-                        <td>2021/05/02</td>
+                        <td>Juan Perez Ruiz</td>
+                        <td>2021/02/07</td>
+                        <td>$2000</td>
                     </tr>
                     <tr>
                         <td class="table-checkbox"><input type="checkbox"></td>
-                        <td><span class="offline"></span></td>
-                        <td>Maria Morales</td>
-                        <td>CEO</td>
-                        <td>San Jose</td>
-                        <td>34</td>
-                        <td>2021/05/02</td>
+                        <td>Maria Rojas Rojas</td>
+                        <td>2021/07/19</td>
+                        <td>$9000</td>
                     </tr>
                     <tr>
                         <td class="table-checkbox"><input type="checkbox"></td>
-                        <td><span class="available"></span></td>
-                        <td>Maria Morales</td>
-                        <td>CEO</td>
-                        <td>San Jose</td>
-                        <td>34</td>
-                        <td>2021/05/02</td>
+                        <td>Gustavo Solano Solano</td>
+                        <td>2021/07/22</td>
+                        <td>$4000</td>
                     </tr>
                     <tr>
                         <td class="table-checkbox"><input type="checkbox"></td>
-                        <td><span class="away"></span></td>
-                        <td>Maria Morales</td>
-                        <td>CEO</td>
-                        <td>San Jose</td>
-                        <td>34</td>
+                        <td>Miguel Rojas Mendez</td>
                         <td>2021/05/02</td>
+                        <td>$5000</td>
                     </tr>
                     <tr>
                         <td class="table-checkbox"><input type="checkbox"></td>
-                        <td><span class="offline"></span></td>
-                        <td>Maria Morales</td>
-                        <td>CEO</td>
-                        <td>San Jose</td>
-                        <td>34</td>
-                        <td>2021/05/02</td>
+                        <td>Sabrina Rodriguez Lopez</td>
+                        <td>2021/05/07</td>
+                        <td>$6000</td>
                     </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox"></td>
+                        <td>Jonathan Rojas Garcia</td>
+                        <td>2021/11/08</td>
+                        <td>$4000</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox"></td>
+                        <td>Elizabet Martinez Mendez</td>
+                        <td>2021/10/21</td>
+                        <td>$9000</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox"></td>
+                        <td>Dariela Palacios Lopez</td>
+                        <td>2021/03/14</td>
+                        <td>$800</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox"></td>
+                        <td>Karla Castro Mora</td>
+                        <td>2020/12/10</td>
+                        <td>4500</td>
+                    </tr>
+
                 </tbody>
             </table>
             <div class="footer-tools">
                 <div class="list-items">
-                    Show
+                    Ver
                     <select name="n-entries" id="n-entries" class="n-entries">
                         <option value="5">5</option>
                         <option value="10">10</option>
                         <option value="15">15</option>
                     </select>
-                    Entries
+
                 </div>
                 <div class="pages">
                     <ul>
@@ -136,23 +137,31 @@
                         <li><button>2</button></li>
                         <li><button>3</button></li>
                         <li><button>4</button></li>
-                        <li><button>...</button></li>
-                        <li><button>9</button></li>
-                        <li><button>10</button></li>
+                        <li><button>5</button></li>
+                        <li><button>6</button></li>
+                        <li><button>7</button></li>
                     </ul>
 
                 </div>
             </div>
         </div>
-        
-       
-        
-         <!--  <div class="capa"></div> -->
-
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/uno.jpg" class="img-galeria" alt="Hola">
+                    <img src="img/dos.jpg" class="img-galeria" alt="">
+                    <img src="img/tres.jpg" class="img-galeria" alt="">
+                    <img src="img/cuatro.jpg" class="img-galeria" alt="">
+                    <img src="img/cinco.jpg" class="img-galeria" alt="">
+                    <img src="img/seis.jpg" class="img-galeria" alt="">
+                </div>
+            </div>
+        </section>
         <footer id="contactos">
-            <h2 class="subtitulo">Me puedes contactar</h2>
+            <h2 class="subtitulo">Envianos tus comentarios</h2>
             <div class="contenedor contactos-content">
-                <form>  
+                <form>
                     <LABel>Para Correo:</LABel>
                     <input type="email" placeholder="Correo">
                     <label>Tematica:</label>
