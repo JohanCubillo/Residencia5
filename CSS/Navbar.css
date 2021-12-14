@@ -1,5 +1,6 @@
 header{
 <<<<<<< HEAD
+<<<<<<< HEAD
     position: absolute;
     top: 0;
     left: 0;
@@ -11,6 +12,8 @@ header{
     z-index: 10;
     background: #5b639c;
 =======
+=======
+>>>>>>> 5a1e0e053df6f7ff463e6b9f658800b3921f8371
   position: absolute;
   top: 0;
   left: 0;
@@ -21,6 +24,9 @@ header{
   padding: 15px 90px;
   z-index: 10;
   background: #5b639c;
+<<<<<<< HEAD
+>>>>>>> 5a1e0e053df6f7ff463e6b9f658800b3921f8371
+=======
 >>>>>>> 5a1e0e053df6f7ff463e6b9f658800b3921f8371
   }
   header .logo
