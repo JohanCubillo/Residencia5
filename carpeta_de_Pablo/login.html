@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Login</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/Navbar.css">
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="login_style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <h1>Futuro Nombre</h1>
+        </a>
+        <div class="toolbar">
+
+            <ul class="navigation">
+                <li><a href="../Videos/videos.html">Videos / </a></li>
+                <li><a href="#">Tabla de Calificaciones / </a></li>
+                <li><a href="../Referidos/Referidos.html">Referidos / </a></li>
+                <li><a href="#">Como funciona / </a></li>
+                <li><a href="#">Iniciar sesion</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <section class="scene">
+
+        <div class="sun"></div>
+        <div class="bg"></div>
+
+        <!-- Add Pagination -->
+
+        <div class="login-box">
+            <img class="avatar" src="../images/eth.png" alt="Pequeño logo del sitio web">
+            <h1>Ingresa Aquí</h1>
+            <form action="">
+                <label for="username">Usuario</label>
+                <input type="text" placeholder="Escribe usuario">
+
+                <label for="password">Contraseña</label>
+                <input type="password" placeholder="Escribe contraseña">
+
+                <input type="submit" value="Entrar">
+                <a href="">Olvidé mi contraseña</a> <br>
+                <a href="">Aun no tengo cuenta</a>
+            </form>
+
+        </div>
+
+        <div class="bg">
+            <img src="../images/eth.png" class="car1">
+            <img src="../images/btc.png" class="car2">
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div class="surface" style="background-color: violet;">
+
+            <div class="caja1">
+                <ul>
+                    <li id="iconos"><i class="fab fa-facebook-f fa-2x"></i></li>
+                    <li id="iconos"> <i class="fab fa-instagram fa-2x"></i> </li>
+                    <li id="iconos"> <i class="fab fa-twitter fa-2x"></i></li>
+                    <li id="iconos"><i class="fab fa-whatsapp fa-2x"></i></li>
+                </ul>
+            </div>
+            <div class="caja2">
+                <p>Wenas</p>
+                <p>Soy el</p>
+                <p>Fooetr</p>
+            </div>
+            <div class="caja3">
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const sun = document.querySelector('.sun');
+        const body = document.querySelector('body');
+        sun.onclick = function () {
+            body.classList.toggle('dark')
+        }
+    </script>
+    <script src="https://use.fontawesome.com/0428a0a690.js"></script>
+</body>
+
+</html>
