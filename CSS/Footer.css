@@ -1,38 +1,9 @@
-.surface{
-    width: 100%;
-    background-color: transparent;
-    height: 100px;
+footer{
+    background-color: #5b639c;
 }
 
-.caja1{
-    padding-left: 30px;
-    width: 20%;
-    display: inline-block;
-    height: 100%;
-}
-
-.caja2{
-    width: 39%;
-    background-color: thistle;
-    height: 100%;
-    display: inline-block;
-}
-
-.caja3{
-    width: 39%;
-    background-color: rgb(60, 25, 156);
-    height: 100%;
-    display: inline-block;
-}
-
-.caja1 #iconos{
-    display: inline-block;
-    margin-top: 0;
-    margin-left: 20px;
-    
-}
-
-.caja2 #iconos li{
-    text-decoration: none;
-    background-color: yellow;
-}
+.text-center {
+    text-align: center;
+    color: white;
+  }
+  
