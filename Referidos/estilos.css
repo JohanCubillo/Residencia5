@@ -34,12 +34,8 @@
     
 }
 
-
-
-
 video{
    position: fixed;
-
    min-width: 100%;
    min-height: 100%;
    top: 50%;
@@ -197,7 +193,7 @@ video{
 }
 
 .gallery{
-    background-color: rgb(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .contenedor-galeria{
