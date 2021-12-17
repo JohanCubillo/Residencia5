@@ -54,6 +54,11 @@ color:#222833;
 font-size: 16px;
 }
 
+#inputfile{
+
+    color: rgb(188, 182, 226);
+}
+
 .login-box input[type="submit"]{
     border: none;
     outline: none;
