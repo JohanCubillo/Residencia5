@@ -43,7 +43,7 @@ Navbar lateral -->
         <div id="header">
 
 
-            <div id="tittle"> <span>Share-Coin</span></div>
+            <div id="tittle"> <span>Croin</span></div>
 
 
             <div id="menu-btn">
@@ -58,7 +58,7 @@ Navbar lateral -->
 <!-- mENU De items -->
         <div id="menu-items">
             <div class="item">
-                <a href="../Principal.html">
+                <a href="../Index.html">
                     <div class="icon"><i class="fas fa-home fa-2x"></i></div>
                     <div class="tittle"><span>Inicio</span> </div>
                 </a>
@@ -327,7 +327,7 @@ Navbar lateral -->
                     <span class="circle" aria-hidden="true">
                         <span class="icon arrow"></span>
                     </span>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"> <span
+                    <a href="https://www.youtube.com/watch?v=-2aEVquXyeQ&list=RDo4qsjmLxhow&index=13&ab_channel=ArcticMonkeys-Topic"> <span
                             class="button-text">Skip>></span></a>
                 </button>
             </div>
@@ -341,73 +341,12 @@ Navbar lateral -->
 
 
     <!-- Script importante para que funcione el menu lateral -->
-    <script>
+<script src="menu_lateral.js"></script>
 
-        const btn = document.querySelector('#menu-btn');
-        const menu = document.querySelector('#side-menu');
-
-        btn.addEventListener('click', e => {
-            menu.classList.toggle("menu-collapsed");
-            menu.classList.toggle("menu-expanded");
-            document.querySelector('body').classList.toggle('body-expanded');
-        });
-
-
- 
-
-    </script>
-
-    <script>
-
-
-
-        const button = document.querySelector(".video");
-        const close = document.querySelector(".close");
-        const trailer = document.querySelector(".trailer");
-        const video = document.querySelector(".didier");
-
-
-
-
-        button.addEventListener('click', () => {
-            video.play();
-            trailer.style.visibility = "visible";
-            trailer.style.opacity = 1;
-
-
-
-
-        });
-
-        close.addEventListener('click', () => {
-            trailer.style.visibility = "hidden";
-            trailer.style.opacity = 0;
-            video.pause();
-            video.currentTime = 0;
-        });
-
-      
-
-  
-
-    </script>
+<script src="anuncio.js"></script>
     <script src="boton.js"></script>
     <script src="contant.js"></script>
-<script>
-function SINO(cual) {
-    var contenedor = document.getElementById("videoculto");
-
-   var elElemento=document.getElementById(cual);
-   if(elElemento.style.display == 'block') {
-      elElemento.style.display = 'none';
-
-   } else {
-      elElemento.style.display = 'block';
-     contenedor.style.display = "none";
-   }
-}
-
-</script>
+<script src="funtionvideo.js"></script>
     <script src="https://use.fontawesome.com/84069eec98.js"></script>
 
 </body>

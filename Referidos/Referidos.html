@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Referidos</title>
+    <link rel="stylesheet" href="../CSS/Navbar.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../CSS/Footer.css">
 </head>
 
 <body>
@@ -17,14 +19,23 @@
     </video>
 
     <main>
+
         <header>
-            <a href="" class="titulo">
-                <h1>REFERIDOS</h1>
+            <a href="../Principal.html" class="logo">
+                <h1>Croin</h1>
             </a>
-            <ul class="navigation">
-                <li><a href="../Principal.html">Volver</a></li>
-            </ul>
+            <div class="toolbar">
+                <ul class="navigation">
+                    <li><a href="../Videos/videos.html">Videos / </a></li>
+                    <li><a href="../tablas/index.html">Tabla de Calificaciones / </a></li>
+                    <li><a href="../Referidos/Referidos.html">Referidos / </a></li>
+                    <li><a href="#">Como funciona / </a></li>
+                    <li><a href="../Login/login.html">Iniciar sesion</a></li>
+                </ul>
+            </div>
+
         </header>
+
         <div class="datatable-container">
             <div class="header-tools">
                 <div class="tools">
@@ -145,11 +156,10 @@
                 </div>
             </div>
         </div>
-        <section class="gallery" id="galeria">
+        <section class="gallery">
             <div class="contenedor">
-                <h2 class="subtitulo"></h2>
                 <div class="contenedor-galeria">
-                    <img src="img/uno.jpg" class="img-galeria" alt="Hola">
+                    <img src="img/uno.jpg" class="img-galeria" alt="">
                     <img src="img/dos.jpg" class="img-galeria" alt="">
                     <img src="img/tres.jpg" class="img-galeria" alt="">
                     <img src="img/cuatro.jpg" class="img-galeria" alt="">
@@ -158,13 +168,13 @@
                 </div>
             </div>
         </section>
-        <footer id="contactos">
+        <div id="contactos">
             <h2 class="subtitulo">Envianos tus comentarios</h2>
             <div class="contenedor contactos-content">
                 <form>
                     <LABel>Para Correo:</LABel>
                     <input type="email" placeholder="Correo">
-                    <label>Tematica:</label>
+                    <label>Tema:</label>
                     <select id="topic">
                         <option>---Elije un tema---</option>
                         <option>Consulta</option>
@@ -172,14 +182,19 @@
                         <option>Reporte</option>
                         <option>Otro</option>
                     </select>
-                    <label for="subject">Asunto:</label>
+                    <label>Asunto:</label>
                     <input type="text" placeholder="Ingrese el asunto">
                     <label for="body">Comentarios:</label>
                     <textarea id="body" placeholder="Agrege sus comentarios"></textarea>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
+        </div>
+
+        <footer>
+            <p class="text-center">Copyright &copy;Croin.store</p>
         </footer>
+
     </main>
 
 </body>
